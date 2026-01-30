@@ -1,0 +1,68 @@
+.ProductCardDiv {
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 22px;
+
+  font-weight: 100;
+
+  border: 2px solid #000e1d;
+  color: white;
+  background-color: #000e1d;
+
+  cursor: pointer;
+}
+
+.imageDiv {
+  width: 100%;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  flex: 1 0 auto;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.productImage {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.titleAndPriceDiv {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+
+  margin: 20px 0;
+}
+
+.productTitle {
+  width: 250px;
+  font-size: 1rem;
+}
+
+.cardActDiv {
+  flex-shrink: 0;
+  height: 50px;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addCartBtn {
+  width: 120px;
+}
