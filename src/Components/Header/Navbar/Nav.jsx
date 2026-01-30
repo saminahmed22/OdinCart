@@ -1,13 +1,13 @@
 import { Link } from "react-router";
 
-import Cart from "./Cart/Cart.jsx";
+import CartBtn from "./CartBtn/CartBtn.jsx";
 import styles from "./Nav.module.css";
 
-export default function Nav() {
+export default function Nav({ count }) {
   return (
     <nav className={styles.nav}>
       <Link className={styles.cartLink} to="cart">
-        <Cart></Cart>
+        <CartBtn count={count} />
       </Link>
     </nav>
   );
