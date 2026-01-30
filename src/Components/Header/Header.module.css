@@ -14,14 +14,18 @@
 }
 
 header {
-  height: 120px;
+  height: 100px;
   width: 100%;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-shrink: 0;
 
   background-color: #000e1d;
+
+  position: sticky;
+  top: 0;
 }
 
 .brandTitle {
