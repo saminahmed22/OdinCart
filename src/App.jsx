@@ -1,15 +1,15 @@
 import { useState } from "react";
+import { Outlet } from "react-router";
 
 import Header from "./Components/Header/Header";
-import ItemList from "./Components/ItemList/ItemList";
 
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [cartItems, setCartItems] = useState({});
 
   return (
     <div className="appDiv">
-      <Header count={count}></Header>
-      <ItemList setCount={setCount}></ItemList>
+      <Header cartItems={cartItems} setCartItems={setCartItems}></Header>
+      <Outlet context={[cartItems, setCartItems]}></Outlet>
       <footer></footer>
     </div>
   );
