@@ -58,16 +58,3 @@ input[type="number"] {
 
   padding: 50px 0 50px 0;
 }
-
-footer {
-  height: 70px;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  color: white;
-  background-color: #000e1d;
-}

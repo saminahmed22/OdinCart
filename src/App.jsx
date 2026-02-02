@@ -10,7 +10,6 @@ export default function App() {
     <div className="appDiv">
       <Header cartItems={cartItems} setCartItems={setCartItems}></Header>
       <Outlet context={[cartItems, setCartItems]}></Outlet>
-      <footer></footer>
     </div>
   );
 }
