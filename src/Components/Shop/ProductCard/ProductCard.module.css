@@ -1,0 +1,148 @@
+.ProductCardDiv {
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 22px;
+
+  font-weight: 100;
+
+  border: 2px solid #000e1d;
+  color: white;
+  background-color: #000e1d;
+
+  cursor: pointer;
+}
+
+.imageDiv {
+  width: 100%;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  flex: 1 0 auto;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.productImage {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.titleAndPriceDiv {
+  min-height: 120px;
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+.productPrice {
+  align-self: flex-start;
+  padding-top: 20px;
+}
+
+.productNameAndReview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productTitle {
+  height: 50px;
+
+  width: 250px;
+  font-size: 1rem;
+}
+
+.cardActDiv {
+  flex-shrink: 0;
+  height: 50px;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addCartBtn {
+  width: 120px;
+}
+
+.clickedCartButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  background-color: white;
+
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.cartQuantity {
+  height: 30px;
+  width: 40px;
+  background-color: rgb(229, 226, 226);
+  border: 1px solid rgba(0, 0, 0, 0.388);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 10px;
+}
+
+.quantityAddBtn,
+.quantityRemoveBtn {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0;
+}
+
+.quantityAddBtn:hover,
+.quantityRemoveBtn:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.quantityAddBtn:disabled,
+.quantityRemoveBtn:disabled {
+  cursor: not-allowed;
+}
+
+.quantityAddIcon,
+.quantityRemoveIcon {
+  height: 22px;
+}
+
+.productReview {
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.reviewIcon {
+  height: 20px;
+}
+
+.productReview p {
+  padding-top: 0px;
+}
