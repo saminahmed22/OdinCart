@@ -22,7 +22,13 @@ header {
   align-items: center;
   flex-shrink: 0;
 
-  background-color: #000e1d;
+  background: #000e1d;
+  background: linear-gradient(
+    108deg,
+    rgba(0, 14, 29, 1) 0%,
+    rgba(0, 14, 29, 1) 57%,
+    rgba(15, 53, 92, 1) 100%
+  );
 
   position: sticky;
   top: 0;
