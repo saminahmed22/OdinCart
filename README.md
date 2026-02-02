@@ -1,2 +1,2 @@
-# OdinCart
-A shopping cart project using React as a part of the React course of the Odin Project's curriculum.
+An e-commerece shop prototype, as an part of the Odin project's curriculum, part of the React course.
+Intended to teach react testing and routing features.
