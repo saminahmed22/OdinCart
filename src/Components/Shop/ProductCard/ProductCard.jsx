@@ -5,7 +5,7 @@ import styles from "./ProductCard.module.css";
 function CartButton({ id, title, price, image }) {
   const [cartItems, setCartItems] = useOutletContext();
   const [cartQuantity, setQuantity] = useState(
-    cartItems[id]?.quantity > 0 ? cartItems[id].quantity : 1
+    cartItems[id]?.quantity > 0 ? cartItems[id].quantity : 1,
   );
 
   function handleQuantityChange(e, manualQuantity = null) {
@@ -57,7 +57,7 @@ function CartButton({ id, title, price, image }) {
         >
           <img
             className={styles.quantityAddIcon}
-            src="/src/assets/icons/plus.svg"
+            src="/public/assets/icons/plus.svg"
             alt=""
           />
         </button>
@@ -85,7 +85,7 @@ function CartButton({ id, title, price, image }) {
         >
           <img
             className={styles.quantityRemoveIcon}
-            src="/src/assets/icons/minus.svg"
+            src="/public/assets/icons/minus.svg"
             alt=""
           />
         </button>
@@ -115,7 +115,7 @@ export default function ProductCard({
           <div className={styles.productReview}>
             <img
               className={styles.reviewIcon}
-              src="/src/assets/icons/star.svg"
+              src="/public/assets/icons/star.svg"
               alt=""
             />
 
