@@ -5,11 +5,11 @@ import styles from "./Cart.module.css";
 import CartCard from "./CartCard/CartCard";
 
 export default function Cart() {
-  const [cartItems] = useOutletContext();
+  const [cartItems, setCartItems] = useOutletContext();
   const getTotalPrice = () => {
     let total = 0;
     Object.values(cartItems).map(
-      (itemObj) => (total += itemObj.price * itemObj.quantity)
+      (itemObj) => (total += itemObj.price * itemObj.quantity),
     );
     return total.toFixed(2);
   };
@@ -19,6 +19,20 @@ export default function Cart() {
       return (
         <div className={`itemListDiv ${styles.cartItemListDiv}`}>
           <div className={styles.cartList}>
+            <div className={styles.cartRemoveBtnDiv}>
+              <button
+                className={styles.cartRemoveBtn}
+                onClick={() => {
+                  setCartItems({});
+                }}
+              >
+                <img
+                  src="/assets/icons/deleteBlack.svg"
+                  alt="Remove all button"
+                />
+                <p>Remove all</p>
+              </button>
+            </div>
             <div className={styles.cartListHeader}>
               <div className={styles.cartListHeaderTitle}>
                 <b className={styles.cartListHeaderTexts}>Title</b>
