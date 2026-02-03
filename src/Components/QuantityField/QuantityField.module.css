@@ -1,0 +1,51 @@
+.clickedCartButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  background-color: white;
+
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.cartQuantity {
+  height: 30px;
+  width: 40px;
+  background-color: rgb(229, 226, 226);
+  border: 1px solid rgba(0, 0, 0, 0.388);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 10px;
+}
+
+.quantityAddBtn,
+.quantityRemoveBtn {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0;
+}
+
+.quantityAddBtn:hover,
+.quantityRemoveBtn:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.quantityAddBtn:disabled,
+.quantityRemoveBtn:disabled {
+  cursor: not-allowed;
+}
+
+.quantityAddIcon,
+.quantityRemoveIcon {
+  height: 22px;
+}
