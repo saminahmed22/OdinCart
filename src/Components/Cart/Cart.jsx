@@ -49,15 +49,19 @@ export default function Cart() {
                 </div>
               </div>
             </div>
-            {Object.values(cartItems).map((itemObj) => (
-              <CartCard
-                key={`cart_${itemObj.title}`}
-                title={itemObj.title}
-                price={itemObj.price}
-                quantity={itemObj.quantity}
-                image={itemObj.image}
-              ></CartCard>
-            ))}
+            {Object.keys(cartItems).map(
+              (id) =>
+                cartItems[id].quantity > 0 && (
+                  <CartCard
+                    key={`cart_${cartItems[id].title}`}
+                    id={id}
+                    title={cartItems[id].title}
+                    price={cartItems[id].price}
+                    quantity={cartItems[id].quantity}
+                    image={cartItems[id].image}
+                  ></CartCard>
+                ),
+            )}
             <div className={styles.cartListFooter}>
               <div className={styles.cartListFooterTitle}>
                 <b className={styles.cartListFooterTexts}>Net Total</b>
