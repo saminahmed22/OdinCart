@@ -83,7 +83,7 @@
 }
 .cartListFooterPrice {
   width: fit-content;
-  min-width: 100px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
