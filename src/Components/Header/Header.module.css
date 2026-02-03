@@ -1,16 +1,6 @@
 @font-face {
-  font-family: times;
-  src: url(/src/assets/fonts/times.ttf);
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(/src/assets/fonts/Montserrat.ttf);
-}
-
-@font-face {
   font-family: Quicksand;
-  src: url(/src/assets/fonts/Quicksand.ttf);
+  src: url(/assets/fonts/Quicksand.ttf);
 }
 
 header {

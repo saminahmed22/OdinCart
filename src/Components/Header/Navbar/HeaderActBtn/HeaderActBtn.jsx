@@ -16,7 +16,7 @@ export default function HeaderActBtn({ cartItems, isShop }) {
       return (
         <button className={styles.actButton}>
           <div className={styles.cartBtnTitle}>
-            <img src="/public/assets/icons/cart.svg" alt="Cart Icon" />
+            <img src="/assets/icons/cart.svg" alt="Cart Icon" />
             <p>Cart</p>
           </div>
           {count > 0 && (
@@ -32,7 +32,7 @@ export default function HeaderActBtn({ cartItems, isShop }) {
           <div className={styles.cartBtnTitle}>
             <img
               className={styles.storeIcon}
-              src="/public/assets/icons/store.svg"
+              src="/assets/icons/store.svg"
               alt="Cart Icon"
             />
             <p>Store</p>

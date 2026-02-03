@@ -57,7 +57,7 @@ function CartButton({ id, title, price, image }) {
         >
           <img
             className={styles.quantityAddIcon}
-            src="/public/assets/icons/plus.svg"
+            src="/assets/icons/plus.svg"
             alt=""
           />
         </button>
@@ -85,7 +85,7 @@ function CartButton({ id, title, price, image }) {
         >
           <img
             className={styles.quantityRemoveIcon}
-            src="/public/assets/icons/minus.svg"
+            src="/assets/icons/minus.svg"
             alt=""
           />
         </button>
@@ -115,7 +115,7 @@ export default function ProductCard({
           <div className={styles.productReview}>
             <img
               className={styles.reviewIcon}
-              src="/public/assets/icons/star.svg"
+              src="/assets/icons/star.svg"
               alt=""
             />
 
