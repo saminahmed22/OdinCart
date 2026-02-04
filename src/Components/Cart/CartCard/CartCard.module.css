@@ -1,71 +1,190 @@
+.cartCardDiv {
+  height: 200px;
+  width: 100%;
+
+  display: flex;
+
+  border: 1px solid rgba(0, 0, 0, 0.508);
+  border-radius: 20px;
+}
+
+.cartCardDiv:hover {
+  background-color: rgba(255, 255, 255, 0.356);
+}
+
 .cartCard {
-  min-height: fit-content;
-  width: 750px;
+  display: flex;
+  flex: 1;
+}
 
-  border-radius: 20px;
-
-  margin: 0 0 20px 0;
+.imgDiv {
+  min-width: 150px;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 
-  padding: 20px 10px;
+  margin: 10px 0px;
 }
 
-.cartCardWithDelete:hover {
-  background-color: rgba(255, 255, 255, 0.367);
-}
-
-.cartCardWithDelete {
-  width: 850px;
+.cardHeader {
+  height: 50%;
+  flex: 1;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-
-  padding: 0 20px;
-  border-radius: 20px;
+  margin: 0;
+}
+.titleDiv {
+  flex: 1;
 }
 
-.cartCardRemoveBtn {
-  margin-left: 0;
-  width: 50px;
-  height: 50px;
-  margin: 0 0 20px 0;
+.price {
+  min-width: 100px;
 }
-
-.image {
-  height: 100px;
-}
-
-.title {
-  width: 200px;
-}
-
-.price,
-.quantity,
-.total {
-  width: 125px;
+.quantity {
   width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price,
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.priceDiv {
+  height: 50%;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.cartCardRemoveBtnDiv {
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.titleDiv {
-  width: 400px;
-
+.infoDiv {
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price {
+  font-size: 1.4rem;
+}
+
+.total {
+  display: none;
+}
+
+.itemImage {
+  height: 150px;
+}
+
+.cartCardRemoveBtnDiv {
+  width: 50px;
+  height: 50px;
+
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.priceDiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.cartCardRemoveBtn {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
 
-  width: 400px;
+  background-color: transparent;
+}
+.cartCardRemoveBtn:active {
+  background-color: rgba(255, 0, 0, 0.404);
+}
+
+@media (min-width: 1200px) {
+  .cartCard {
+    min-height: fit-content;
+    width: 750px;
+
+    border-radius: 20px;
+
+    margin: 0 0 20px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+
+    padding: 20px 10px;
+  }
+
+  .cartCardWithDelete:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+  }
+
+  .cartCardWithDelete {
+    width: 850px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+
+  .cartCardRemoveBtn {
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 0;
+  }
+
+  .image {
+    height: 100px;
+  }
+
+  .cardHeader {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .priceDiv {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .price,
+  .quantity,
+  .total {
+    width: 125px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total {
+    font-size: 1.3rem;
+  }
+
+  .titleDiv {
+    min-width: 400px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

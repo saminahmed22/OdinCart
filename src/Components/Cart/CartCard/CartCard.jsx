@@ -13,31 +13,38 @@ export default function CartCard({
   const [cartItems, setCartItems] = useOutletContext();
   const total = price * quantity;
   return (
-    <div className={styles.cartCardWithDelete}>
+    <div className={styles.cartCardDiv}>
       <div className={styles.cartCard}>
-        <div className={styles.titleDiv}>
-          <img className={styles.image} src={image} alt="" />
-          <div className={styles.title}>{title}</div>
+        <div className={styles.imgDiv}>
+          <img className={styles.itemImage} src={image}></img>
         </div>
-        <div className={styles.priceDiv}>
-          <div className={styles.price}>${price}</div>
-          <div className={styles.quantity}>
-            <QuantityField id={id}></QuantityField>
+        <div className={styles.infoDiv}>
+          <div className={styles.cardHeader}>
+            <div className={styles.titleDiv}>{title}</div>
+            <div className={styles.cartCardRemoveBtnDiv}>
+              <button
+                className={styles.cartCardRemoveBtn}
+                onClick={() => {
+                  const cloneObj = structuredClone(cartItems);
+                  delete cloneObj[id];
+                  setCartItems(cloneObj);
+                }}
+              >
+                <img
+                  src="/assets/icons/deleteBlack.svg"
+                  alt="Remove item button"
+                />
+              </button>
+            </div>
           </div>
-          <div className={styles.total}>${total.toFixed(2)}</div>
+          <div className={styles.priceDiv}>
+            <div className={styles.price}>${price}</div>
+            <div className={styles.quantity}>
+              <QuantityField id={id}></QuantityField>
+            </div>
+            <div className={styles.total}>${total.toFixed(2)}</div>
+          </div>
         </div>
-      </div>
-      <div className={styles.cartCardRemoveBtnDiv}>
-        <button
-          className={styles.cartCardRemoveBtn}
-          onClick={() => {
-            const cloneObj = structuredClone(cartItems);
-            delete cloneObj[id];
-            setCartItems(cloneObj);
-          }}
-        >
-          <img src="/assets/icons/deleteBlack.svg" alt="Remove item button" />
-        </button>
       </div>
     </div>
   );

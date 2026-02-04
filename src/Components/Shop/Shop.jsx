@@ -21,7 +21,7 @@ export default function Shop() {
         const filteredResponse = response.filter(
           (item) =>
             item.category === "men's clothing" ||
-            item.category === "women's clothing"
+            item.category === "women's clothing",
         );
         setItems(filteredResponse);
       });

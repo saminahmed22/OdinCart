@@ -33,22 +33,7 @@ export default function Cart() {
                 <p>Remove all</p>
               </button>
             </div>
-            <div className={styles.cartListHeader}>
-              <div className={styles.cartListHeaderTitle}>
-                <b className={styles.cartListHeaderTexts}>Title</b>
-              </div>
-              <div className={styles.cartListHeaderPrices}>
-                <div className={styles.headerPrice}>
-                  <b className={styles.cartListHeaderTexts}>Price</b>
-                </div>
-                <div className={styles.headerQuantity}>
-                  <b className={styles.cartListHeaderTexts}>Quantity</b>
-                </div>
-                <div className={styles.headerTotal}>
-                  <b className={styles.cartListHeaderTexts}>Total</b>
-                </div>
-              </div>
-            </div>
+
             {Object.keys(cartItems).map(
               (id) =>
                 cartItems[id].quantity > 0 && (
