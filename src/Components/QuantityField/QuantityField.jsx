@@ -22,8 +22,10 @@ export default function QuantityField({ id }) {
   }
 
   return (
-    <div className={styles.clickedCartButtonDiv}>
+    <div className={styles.quantityFieldDiv}>
       <button
+        title="Increase quantity"
+        aria-label="Increase quantity"
         className={styles.quantityAddBtn}
         onClick={(e) => {
           const currentCount = cartItems[id].quantity + 1;
@@ -43,6 +45,8 @@ export default function QuantityField({ id }) {
       </button>
       <form onSubmit={handleSubmit}>
         <input
+          title="Enter amount manually"
+          aria-label="Enter amount manually"
           name="quantityField"
           className={styles.cartQuantity}
           type="number"
@@ -53,6 +57,8 @@ export default function QuantityField({ id }) {
         />
       </form>
       <button
+        title="Decrease quantity"
+        aria-label="Decrease quantity"
         className={styles.quantityRemoveBtn}
         onClick={(e) => {
           const currentCount = cartItems[id].quantity - 1;

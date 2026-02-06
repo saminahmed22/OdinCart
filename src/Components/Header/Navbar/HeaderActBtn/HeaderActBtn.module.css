@@ -1,3 +1,28 @@
+.actButton {
+  width: 120px;
+
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.actButtonTitle {
+  height: 30px;
+  width: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actButton img {
+  height: 30px;
+}
+
+.storeIcon {
+  height: 24px !important;
+}
+
 .cartCount {
   height: 25px;
   width: fit-content;
@@ -23,29 +48,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.actButton {
-  width: 120px;
-
-  display: flex;
-  gap: 0;
-  align-items: center;
-}
-
-.cartBtnTitle {
-  height: 30px;
-  width: 80px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.actButton img {
-  height: 30px;
-}
-
-.storeIcon {
-  height: 24px !important;
 }

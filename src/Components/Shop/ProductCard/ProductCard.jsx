@@ -42,27 +42,38 @@ export default function ProductCard({
   return (
     <div className={styles.ProductCardDiv}>
       <div className={styles.imageDiv}>
-        <img className={styles.productImage} src={image} alt="" />
+        <img
+          title="Item image"
+          className={styles.productImage}
+          src={image}
+          alt="Item image"
+        />
       </div>
       <div className={styles.titleAndPriceDiv}>
         <div className={styles.productNameAndReview}>
-          <h2 className={styles.productTitle}>{title}</h2>
+          <h2 title="Title" className={styles.productTitle}>
+            {title}
+          </h2>
           <div className={styles.productReview}>
             <img
               className={styles.reviewIcon}
               src="/assets/icons/star.svg"
-              alt=""
+              alt="Star icon"
             />
-            <p>
+            <p title="Rating">
               {rating}({ratingCount})
             </p>
           </div>
         </div>
 
-        <h3 className={styles.productPrice}>${price}</h3>
+        <h3 title="Price" className={styles.productPrice}>
+          ${price}
+        </h3>
       </div>
       <div className={styles.cardActDiv}>
-        <button className={styles.buyNowBtn}>Buy now</button>
+        <button title="Buy now" className={styles.buyNowBtn}>
+          Buy now
+        </button>
 
         {CartButton({ id, title, price, image, cartItems, setCartItems })}
       </div>
