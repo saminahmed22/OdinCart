@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div className="appDiv">
-      <Header cartItems={cartItems} setCartItems={setCartItems}></Header>
+      <Header cartItems={cartItems}></Header>
       <Outlet context={[cartItems, setCartItems]}></Outlet>
     </div>
   );
